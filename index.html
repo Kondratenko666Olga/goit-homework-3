@@ -32,9 +32,9 @@
   </head>
 
   <body>
-    <header>
+    <header class="head">
       <div class="container d-flex">
-        <nav class="d-flex">
+        <nav class="d-flex head-nav">
           <a class="logo" href="./index.html" rel="home"
             >Web<span class="logo-color">Studio</span></a
           >
@@ -57,7 +57,7 @@
           </ul>
         </nav>
         <address class="nav-addres">
-          <ul>
+          <ul class="address-list">
             <li>
               <a href="mailto:info@devstudio.com" class="nav-addres-list"
                 >info@devstudio.com</a
@@ -89,30 +89,30 @@
 
       <section class="main-values">
         <div class="container values">
-          <h2 class="main-values-header">Values</h2>
-          <ul>
-            <li>
+          <h2 class="visually-hidden">Values</h2>
+          <ul class="values-list">
+            <li class="values-list-part">
               <h3 class="main-names">Strategy</h3>
               <p class="main-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="values-list-part">
               <h3 class="main-names">Punctuality</h3>
               <p class="main-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="values-list-part">
               <h3 class="main-names">Diligence</h3>
               <p class="main-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="values-list-part">
               <h3 class="main-names">Technologies</h3>
               <p class="main-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -128,26 +128,34 @@
       <section class="team">
         <div class="container team-content">
           <h2 class="team-hed">Our Team</h2>
-          <ul>
+          <ul class="team-list">
             <li class="team-collection">
               <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
-              <h3 class="main-names">Mark Guerrero</h3>
-              <p class="main-text">Product Designer</p>
+              <div class="list-info">
+                <h3 class="main-names">Mark Guerrero</h3>
+                <p class="main-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-collection">
               <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
-              <h3 class="main-names">Tom Ford</h3>
-              <p class="main-text">Frontend Developer</p>
+              <div class="list-info">
+                <h3 class="main-names">Tom Ford</h3>
+                <p class="main-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-collection">
               <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
-              <h3 class="main-names">Camila Garcia</h3>
-              <p class="main-text">Marketing</p>
+              <div class="list-info">
+                <h3 class="main-names">Camila Garcia</h3>
+                <p class="main-text">Marketing</p>
+              </div>
             </li>
             <li class="team-collection">
               <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
-              <h3 class="main-names">Daniel Wilson</h3>
-              <p class="main-text">UI Designer</p>
+              <div class="list-info">
+                <h3 class="main-names">Daniel Wilson</h3>
+                <p class="main-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -155,18 +163,20 @@
 
       <!--Our Portfolio-->
 
-      <section>
-        <div class="container portfolio">
+      <section class="portfolio">
+        <div class="container">
           <h2 class="team-hed">Our Portfolio</h2>
-          <ul>
+          <ul class="portfolio-list">
             <li>
               <img
                 src="./images/bankingApp.jpg"
                 alt="few pages from bank App"
                 width="360"
               />
-              <h3 class="main-names">Banking App</h3>
-              <p class="main-text">App</p>
+              <div class="list-info-portfolio">
+                <h3 class="main-names">Banking App</h3>
+                <p class="main-text">App</p>
+              </div>
             </li>
             <li>
               <img
@@ -174,8 +184,10 @@
                 alt="phone & terminal"
                 width="360"
               />
-              <h3 class="main-names">Cashless Payment</h3>
-              <p class="main-text">Marketing</p>
+              <div class="list-info-portfolio">
+                <h3 class="main-names">Cashless Payment</h3>
+                <p class="main-text">Marketing</p>
+              </div>
             </li>
             <li>
               <img
@@ -183,8 +195,10 @@
                 alt="Phone & LapTop"
                 width="360"
               />
-              <h3 class="main-names">Meditation App</h3>
-              <p class="main-text">App</p>
+              <div class="list-info-portfolio">
+                <h3 class="main-names">Meditation App</h3>
+                <p class="main-text">App</p>
+              </div>
             </li>
             <li>
               <img
@@ -192,8 +206,10 @@
                 alt="steering wheel, driver hands, phone"
                 width="360"
               />
-              <h3 class="main-names">Taxi Service</h3>
-              <p class="main-text">Marketing</p>
+              <div class="list-info-portfolio">
+                <h3 class="main-names">Taxi Service</h3>
+                <p class="main-text">Marketing</p>
+              </div>
             </li>
             <li>
               <img
@@ -201,8 +217,10 @@
                 alt="few phone screens & moon design"
                 width="360"
               />
-              <h3 class="main-names">Screen Illustrations</h3>
-              <p class="main-text">Design</p>
+              <div class="list-info-portfolio">
+                <h3 class="main-names">Screen Illustrations</h3>
+                <p class="main-text">Design</p>
+              </div>
             </li>
             <li>
               <img
@@ -210,8 +228,10 @@
                 alt="girl speaking by video chat "
                 width="360"
               />
-              <h3 class="main-names">Online Courses</h3>
-              <p class="main-text">Marketing</p>
+              <div class="list-info-portfolio">
+                <h3 class="main-names">Online Courses</h3>
+                <p class="main-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>

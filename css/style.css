@@ -6,6 +6,10 @@ body {
     background-color: #FFFFFF;
 }
 
+img {
+    display: block;
+}
+
 a {
     text-decoration: none;
     }
@@ -53,10 +57,22 @@ h1,h2,h3,h4,h5,h6,p {
     }
 
     .container { 
-        max-width: 1440px;
+       /* max-width: 1440px;
         padding-left:  156px;
         padding-right:  156px;
-        }
+        */
+        width: 1158px;
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+   }
+
+.head {
+    border-bottom: 1px solid #e7e9fc;
+}
+    
+.head-nav {
+    align-items: center;
+}
 
 /*nav Top menu*/
 header {
@@ -65,8 +81,8 @@ header {
 }
 
 header>.container {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /*padding-top: 24px;
+    padding-bottom: 24px;*/
     justify-content: space-between;
 }
 
@@ -86,9 +102,10 @@ header>.container {
 
 .d-flex>.logo {
     margin-right: 76px;
+    padding: 24px 0 24px;
 }
 
-.nav-menu, .nav-addres>ul{
+.nav-menu, .address-list{
     gap: 40px;
 }
 
@@ -98,6 +115,8 @@ header>.container {
 
 .nav-addres {
     font-style: normal;
+    display: flex;
+    align-items: center;
 }
 
 .nav-addres-list {
@@ -132,8 +151,8 @@ header>.container {
 
 
 .top-block {
-    padding-top: 188px;
-    padding-bottom: 188px;
+    /*padding-top: 188px;
+    padding-bottom: 188px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,6 +161,7 @@ header>.container {
 .main-effective {
     background-color: #2E2F42;
     flex-shrink: 0;
+    padding: 188px 0 188px;
 }
 
 .main-effective-header {
@@ -155,7 +175,7 @@ header>.container {
     letter-spacing: 1.12px;
     line-height: 1.07;
 
-    width: 496px;
+    max-width: 496px;
 }
 
 .main-effective-button {
@@ -172,6 +192,11 @@ header>.container {
 
     margin-top: 48px;
     padding: 16px 32px;
+
+    min-width: 169px;    
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     }
 
 .main-effective-button:hover,:focus {
@@ -182,25 +207,41 @@ header>.container {
 
 .main-values {
     flex-shrink: 0;
+    padding: 120px 0 120px;
 }
-
+/*
 .values {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
-.values>ul {
+*/
+.values-list {
     gap: 24px;
 }
 
-.values>ul>li{
+.values-list-part{
 width: calc((100% - 72px)/4);
 }
 
-
+/*
 .main-values-header {
-    display: none;
+    //display: none;
+    .visually-hidden
 }
+*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 
 /*Team*/
@@ -208,12 +249,9 @@ width: calc((100% - 72px)/4);
 .team {
     flex-shrink: 0;
     background-color: #F4F4FD;
+    padding: 120px 0 120px;
 }
 
-.team-content {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 
 .team-hed {
     font-size: 36px;
@@ -225,26 +263,28 @@ width: calc((100% - 72px)/4);
     margin-bottom: 72px;
 }
 
-.team-content>ul {
+.team-list {
     gap: 24px;
 }
 
-.team-content>ul>li {
+.team-list>li {
     text-align: center;
 }
 
-.main-names {
-    margin-top: 32px;
-    margin-bottom: 8px;
+.list-info {
+    padding: 32px 0 32px;
 }
 
-.main-text {
-    margin-bottom: 32px;
+.main-names {
+    margin-bottom: 8px;
+    text-align: center;
 }
+
 
 .team-collection {
     justify-content: center;
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .main-text{
@@ -258,7 +298,13 @@ width: calc((100% - 72px)/4);
     padding-bottom: 120px;
 }
 
-.portfolio>ul {
+.list-info-portfolio{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -270,6 +316,8 @@ width: calc((100% - 72px)/4);
 
 footer {
     background-color: #2E2F42;
+    padding-top: 101.5px;
+    padding-bottom: 100px;
 }
 
 footer> .logo {
@@ -284,16 +332,14 @@ footer> .logo {
     text-transform: uppercase;
     line-height: 1.17;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
     }
 
     .logo-color-footer {
         color: #f4f4fd;
     }
 
-.bottom {
-    padding-top: 101.5px;
-    padding-bottom: 100px;
-}
 
 .footer-text {
     width: 264px;
